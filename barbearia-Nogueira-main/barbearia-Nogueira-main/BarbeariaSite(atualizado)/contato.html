@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Contato</title>
+</head>
+<body>
+    
+    <section id="contact">
+        <h4> Entre em contato</h4>
+
+        <!--Abreviação .contact-container>form:post>ul.contact-inner>li*5-->
+
+        <div class="contact-container">
+            <form action="/thanks.html" a method="get">
+                <ul class="contact-inner">
+                    <li>
+
+                        <input type="text" placeholder="Name: " autocomplete="off" name="name" required>
+
+                    </li>
+                    <li>
+
+                        <input type="email" name="email" placeholder="Email: " autocomplete="off" required>
+
+                    </li>
+                    <li>
+
+                        <textarea name="message" placeholder="Send your message: " required cols="30" rows="10"
+                            required></textarea>
+
+                    </li>
+                    <li class="formBtn">
+
+                        <input type="submit" class="btnDefault" value="submit">
+                        <input type="reset" class="btnDefault" value="cancel">
+
+                    </li>
+                    <li>
+
+                        <input type="checkbox">
+                        <span> I want to receive junk in my email account </span>
+
+                    </li>
+                </ul>
+
+                <!--Chave de acesso obtida no site: https://www.staticforms.xyz/-->
+
+                <input type="hidden" name="accessKey" value="38b505d7-bc89-411e-b27d-b448cd11f6e4">
+                <!-- pagina de redirecionamento -->
+                <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/resource/thanks.html">
+
+
+            </form>
+        </div>
+
+    </section>
+
+</body>
+</html>
