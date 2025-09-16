@@ -16,20 +16,14 @@
 
     --font-default: 'Lato', sans-serif;
     scroll-behavior: smooth;
-}
+    /* colors */
 
-
-
-
-/* colors */
-
-:root {
+/*Colors*/
 
     --color-default: rgb(255, 255, 255);
     --color-primary: rgba(0, 0, 0, 0.4);
     --color-secondary: rgba(0, 0, 0, 0.4);
     --color-terciary: rgba(0, 0, 0, 0.4);
-}
 
 
 
@@ -39,14 +33,18 @@
 
 
 
-:root {
+
 
     font-size: 14px;
     --title-default: 4em;
     --subtitle-default: 2.5em;
     --paragraph-default: 1.5em;
     --anchor-default: 1.2em;
+
+
 }
+
+
 
 
 
@@ -756,3 +754,4 @@ ol {
 
 
 /*#endregion*/
+
