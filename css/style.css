@@ -1,0 +1,757 @@
+/* #region global */
+
+/* reset */
+
+* {
+
+    padding: 0;
+    margin: 0;
+    border-style: border-box;
+}
+
+
+
+
+:root {
+
+    --font-default: 'Lato', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+
+
+/* colors */
+
+:root {
+
+    --color-default: rgb(255, 255, 255);
+    --color-primary: rgba(0, 0, 0, 0.4);
+    --color-secondary: rgba(0, 0, 0, 0.4);
+    --color-terciary: rgba(0, 0, 0, 0.4);
+}
+
+
+
+
+/* sizes */
+
+
+
+
+:root {
+
+    font-size: 14px;
+    --title-default: 4em;
+    --subtitle-default: 2.5em;
+    --paragraph-default: 1.5em;
+    --anchor-default: 1.2em;
+}
+
+
+
+
+body {
+
+    font-family: var(--font-default);
+    color: var(--color-primary);
+    height: auto;
+}
+
+header {
+
+    z-index: 98;
+    position: fixed;
+
+
+}
+
+
+h1 {
+
+    font-size: var(--title-default);
+}
+
+
+
+
+h2 {
+
+    font-size: var(--subtitle-default);
+    font-weight: 600;
+
+}
+
+
+
+
+
+a {
+
+
+    font-size: var(--anchor-default) !important;
+    cursor: pointer;
+    color: var(--color-default) !important;
+    text-decoration: none;
+
+
+
+}
+
+
+
+
+a:hover {
+
+
+
+
+    color: var(--color-primary) !important;
+
+    font-weight: 600 !important;
+
+    transition: all .3s;
+
+
+
+
+
+}
+
+
+
+
+ul,
+
+ol {
+
+
+
+
+    list-style: none;
+
+
+
+
+}
+
+
+/* #endregion */
+
+/*#region Navbar*/
+
+
+.Navbar {
+
+    height: 70px;
+    width: 100%;
+    background-color: rgba(27, 27, 27, 0.5);
+    position: fixed;
+    z-index: 100;
+
+}
+
+
+
+
+.nav-item {
+
+    padding-right: 22em;
+    padding-top: 0.8em;
+    /* padding-left: 68em; */
+    padding-left: 114em;
+
+}
+
+
+
+
+.dropdown {
+
+    z-index: 99;
+    position: absolute;
+    float: left;
+    padding-left: 90rem !important;
+    top: 0;
+    padding-top: 1em;
+    width: 1px;
+    height: 1px;
+    color: rgb(0, 0, 0);
+}
+
+.dropdown-menu li a {
+
+    color: rgb(0, 0, 0) !important;
+}
+
+.dropdown-menu li a:hover {
+
+    transition: all .5s;
+    color: rgb(255, 0, 0) !important;
+}
+
+
+
+
+.navbar-linha {
+
+    width: 1px;
+    height: 3%;
+    position: absolute;
+    left: 85.5%;
+    color: black;
+    background-color: rgb(0, 0, 0);
+
+
+}
+
+
+
+
+.whatsapp i {
+
+    z-index: 99;
+    position: absolute;
+    float: left;
+    top: 0%;
+    /* padding-left: 34em; */
+    padding-left: 51em;
+    font-size: 2em;
+    padding-top: 10px;
+    width: 1px;
+    height: 1px;
+    color: white;
+
+
+
+}
+
+
+
+
+.instagram i {
+
+    z-index: 99;
+    position: absolute;
+    float: left;
+    top: 0%;
+    /* padding-left: 36em; */
+    padding-left: 53em;
+    font-size: 2em;
+    padding-top: 10px;
+    width: 1px;
+    height: 1px;
+    color: white;
+
+
+}
+
+
+
+
+
+.facebook i {
+
+    z-index: 99;
+    position: absolute;
+    float: left;
+    top: 0%;
+    /* padding-left: 38em; */
+    padding-left: 55em;
+    font-size: 2em;
+    padding-top: 10px;
+    width: 1px;
+    height: 1px;
+    color: white;
+
+
+}
+
+
+
+
+/*#endregion*/
+
+/*#region home*/
+
+#home {
+
+    padding-top: 0;
+    width: 100%;
+    height: 746px;
+    background-color: #ff0000;
+
+}
+
+.home-container video {
+
+    position: relative;
+    width: 100%;
+    z-index: 95;
+}
+
+.home-texto {
+
+    color: var(--color-default);
+    position: absolute;
+    top: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 95;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+
+
+}
+
+
+
+/*#endregion*/
+
+/*#region quem-somos*/
+
+
+.quem-somos-container {
+
+    width: 100%;
+    height: 1300px;
+    /* height: 700px; */
+    background-image: url("img/pexels-pixabay-276514.jpg");
+
+}
+
+.quem-somos-texto {
+
+    padding-top: 30em;
+    text-align: center;
+    color: black;
+
+}
+
+.quem-somos-img {
+
+    letter-spacing: 6em;
+    text-align: center;
+    padding-top: 11em;
+}
+
+
+.img1 {
+
+    width: 400px;
+    height: 500px;
+
+}
+
+
+
+
+
+/*#endregion*/
+
+/*#region serviços*/
+
+.servicos-container {
+
+    width: 100%;
+    height: 900px;
+    background-color: #000000;
+
+}
+
+.servicos-texto {
+
+    padding-top: 3em;
+    text-align: center;
+    color: rgb(255, 255, 255);
+
+}
+
+.servicos-img {
+
+
+    letter-spacing: 6em;
+    text-align: center;
+    /* padding-top: 5em; */
+    padding-top: 8em;
+
+}
+
+.img-servicos {
+
+    width: 500px;
+    height: 600px;
+
+
+}
+
+
+
+/*#endregion*/
+
+/*#region dia-do-noivo*/
+
+#dia-do-noivo {
+
+    width: 100%;
+    height: 100vh;
+    background: url("../img/Cilindro.jpg") center center;
+    background-size: cover;
+    position: relative;
+
+}
+
+.noivo-container {
+
+    width: 100%;
+    height: 800px;
+    /* height: 700px; */
+
+
+
+}
+
+.noivo-texto {
+
+    padding-top: 2em;
+    text-align: center;
+    color: rgb(255, 0, 0);
+
+}
+
+.noivo-img {
+
+
+    letter-spacing: 6em;
+    text-align: center;
+    padding-top: 5em;
+
+}
+
+.img-noivo {
+
+    width: 500px;
+    height: 600px;
+
+
+}
+
+/*#endregion*/
+
+/* #region galeria */
+
+#gallery {
+
+    width: 100%;
+    height: auto;
+    background-color: rgb(67, 67, 67) !important;
+    padding-top: 0%;
+
+}
+
+.gallery-text {
+
+    position: absolute;
+    text-align: center;
+    padding-top: 40px;
+    padding-left: 55em;
+    color: black;
+
+
+}
+
+.filter {
+
+    width: 100%;
+    text-align: center;
+    padding-top: 10em;
+
+}
+
+.filter h4 {
+
+    text-align: center;
+
+}
+
+.filter li {
+
+    display: inline;
+    padding: 10px 10px;
+    font-style: 14px;
+    cursor: pointer;
+    /*Comportamento do cursor sobre um objeto*/
+    text-transform: capitalize;
+    /*A text-transform propriedade CSS pode ser usado para fazer o texto aparecer em letras maiúsculas ou minúsculas, ou com cada palavra em maiúscula. Também pode ajudar a melhorar a legibilidade do ruby.*/
+    letter-spacing: .2rem;
+    transition: all .5s;
+    background-color: #000000;
+    color: white;
+
+}
+
+
+
+.filter li:hover {
+
+    color: black;
+    background-color: #ff0000;
+    transition: all .10s;
+
+}
+
+.filter li.active {
+
+    border-radius: 5px;
+
+}
+
+
+.gallery-container {
+
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 21% 21% 21% 21%;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    padding: 2.5em 5rem 5em 19em;
+    text-align: center;
+    padding-left: 25em;
+
+}
+
+.gallery-inner {
+
+    width: 20%;
+    padding: 0.5rem;
+
+}
+
+.gallery-inner img {
+
+    width: 300px;
+    height: 400px;
+    transition: all .5s;
+    filter: brightness(90%);
+
+
+}
+
+.gallery-inner img:hover {
+
+    transition: all .5s;
+    filter: saturate(100%);
+
+}
+
+
+
+
+
+/*#endregion*/
+
+/*#region localizacao*/
+
+#localizacao {
+
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    padding: 5em 0;
+    color: white;
+    text-align: center;
+
+}
+
+
+
+.localizacao-container {
+
+    width: 100%;
+    padding: 2em 0;
+
+}
+
+/*#endregion*/
+
+/*#region footer*/
+
+#footer {
+
+    background-color: #5a0000;
+    height: 160px;
+    color: white;
+
+}
+
+.footer-container {
+
+    text-align: center;
+    color: white;
+
+}
+
+.footer-guia {
+
+    position: absolute;
+    padding-right: 7em;
+    padding-top: 1em;
+    color: white;
+    text-align: left;
+
+
+}
+
+.copyright {
+
+    padding-top: 2rem;
+    background-color: #5a0000;
+    color: white;
+
+
+}
+
+.footer-texto {
+
+    /* padding-left: 70em; */
+    padding-left: 110em;
+    padding-top: 1em;
+    color: white;
+
+}
+
+
+/*#endregion*/
+
+/*#region contato*/
+
+
+#contact {
+
+    background-color: rgb(0, 0, 0);
+    padding: 8em 0;
+    color: white;
+    text-align: center;
+    height: 100%;
+
+}
+
+#contact h4 {
+
+    font-size: 3em;
+
+}
+
+.contact-container {
+
+    width: 60%;
+    margin: 0 auto;
+
+}
+
+.contact-inner {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5em 0em 2.5em 0em;
+
+}
+
+.contact-inner li {
+
+    padding: 20px;
+
+}
+
+.contact-inner li input[type=text],
+.contact-inner li input[type=email],
+.contact-inner li textarea {
+
+    background-color: rgba(255, 255, 255, 0.623);
+    width: 70%;
+    padding: 10px;
+    border: none;
+    font-size: 1.2em;
+    border-radius: 8px;
+
+}
+
+.contact-inner li input[type=text]:focus,
+.contact-inner li input[type=email]:focus,
+.contact-inner li textarea:focus {
+
+    background-color: rgb(255, 255, 250);
+    width: 70%;
+    padding: 10px;
+    border: none;
+    font-size: 1.2em;
+    border-radius: 8px;
+    outline: none;
+
+}
+
+.formBtn {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+.formBtn input {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 40px;
+    background-color: rgba(255, 0, 0, 0.719);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+
+}
+
+.formBtn input:hover {
+
+    transition: all .5s;
+    background-color: rgb(255, 0, 0);
+
+}
+
+
+/*#endregion*/
+
+/*#region thank*/
+
+.thank {
+
+
+    text-align: center;
+    padding-top: 25em;
+    width: 100%;
+    height: 80vh;
+    background: url("../img/peaky-blinders.jpg") center center;
+    background-size: cover;
+    position: relative;
+    color: aliceblue;
+
+}
+
+
+
+.thank a {
+
+    background-color: aqua;
+    padding: 1px 70px;
+    border-radius: 6px;
+
+}
+
+
+/*#endregion*/
